@@ -1,0 +1,150 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap');
+
+/* Basic Styling */
+body {
+    font-family: 'Lato', sans-serif; /* Default font */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scroll for internal links if added later */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Headings font */
+    font-weight: 600; /* Bolder headings */
+}
+
+/* Header Styling */
+header {
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    /* You could use a custom gradient or image background here */
+    /* Example Gradient:
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    */
+}
+
+header h1 {
+    font-weight: 700; /* Even bolder for main name */
+}
+
+.contact-info a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+}
+
+/* Section Title Styling */
+.section-title {
+    color: #0d6efd; /* Match header color */
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 10px;
+    display: inline-block; /* Ensures border only spans the text width */
+    margin-bottom: 30px !important; /* Override Bootstrap margin if needed */
+}
+
+/* Skills Section Styling */
+#skills .card {
+    border: none; /* Remove default card border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .card:hover {
+   transform: translateY(-5px); /* Subtle lift effect on hover */
+   box-shadow: 0 8px 15px rgba(0,0,0,0.1) !important;
+}
+
+#skills .card-title i {
+    vertical-align: middle;
+}
+
+.skill-category h5 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    border-left: 3px solid #0d6efd;
+    padding-left: 8px;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.4em 0.7em;
+    margin-bottom: 0.4em; /* Add spacing between badges if they wrap */
+}
+
+/* Experience & Consulting Section Styling */
+.job {
+    background-color: #ffffff; /* Ensure white background */
+    border-left: 5px solid #0d6efd; /* Add a colored left border */
+    transition: box-shadow 0.3s ease;
+}
+
+.job:hover {
+     box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+}
+
+.job ul {
+    padding-left: 20px; /* Indent bullet points */
+    margin-top: 10px;
+}
+
+.job ul li {
+    margin-bottom: 8px; /* Space out bullet points */
+}
+
+/* Consulting section specific styling */
+#consulting .job {
+    background-color: #f8f9fa; /* Slightly different background for consulting */
+    border-left-color: #6c757d; /* Use a different border color (e.g., secondary) */
+}
+
+/* Education Section Styling */
+#education .border {
+     border-left: 5px solid #198754; /* Green border for education */
+     background-color: #f8f9fa;
+}
+
+/* Footer Styling */
+footer {
+    /* background-color: #343a40; Already set in HTML */
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a i {
+    transition: color 0.3s ease;
+}
+
+footer a:hover i {
+    color: #adb5bd; /* Lighter color on hover for icons */
+}
+
+/* Responsive Adjustments (Bootstrap handles most, but you can add specifics) */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem; /* Slightly smaller title on mobile */
+    }
+
+    header .lead {
+        font-size: 1.1rem;
+    }
+    .contact-info span {
+        display: block; /* Stack contact info on small screens */
+        margin-bottom: 5px;
+        margin-right: 0 !important; /* Remove right margin when stacked */
+    }
+}
+
+@media (max-width: 576px) {
+     header h1 {
+        font-size: 2.5rem;
+     }
+     main.container {
+         margin-top: 30px !important; /* Reduce top margin on small screens */
+     }
+}
